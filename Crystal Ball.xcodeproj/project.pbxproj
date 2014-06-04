@@ -21,6 +21,9 @@
 		7758ED85193855D800E63229 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7758ED67193855D800E63229 /* UIKit.framework */; };
 		7758ED8D193855D900E63229 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7758ED8B193855D800E63229 /* InfoPlist.strings */; };
 		7758ED8F193855D900E63229 /* Crystal_BallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7758ED8E193855D900E63229 /* Crystal_BallTests.m */; };
+		7758ED9A193C059D00E63229 /* CrystalBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 7758ED99193C059D00E63229 /* CrystalBall.m */; };
+		7758EDE0193D739A00E63229 /* crystal_ball.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7758EDDF193D739A00E63229 /* crystal_ball.mp3 */; };
+		7758EDE2193D73DB00E63229 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7758EDE1193D73DB00E63229 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		7758ED8A193855D800E63229 /* Crystal BallTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Crystal BallTests-Info.plist"; sourceTree = "<group>"; };
 		7758ED8C193855D800E63229 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7758ED8E193855D900E63229 /* Crystal_BallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Crystal_BallTests.m; sourceTree = "<group>"; };
+		7758ED98193C059D00E63229 /* CrystalBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrystalBall.h; sourceTree = "<group>"; };
+		7758ED99193C059D00E63229 /* CrystalBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrystalBall.m; sourceTree = "<group>"; };
+		7758EDDF193D739A00E63229 /* crystal_ball.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crystal_ball.mp3; sourceTree = "<group>"; };
+		7758EDE1193D73DB00E63229 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7758EDE2193D73DB00E63229 /* AudioToolbox.framework in Frameworks */,
 				7758ED66193855D800E63229 /* CoreGraphics.framework in Frameworks */,
 				7758ED68193855D800E63229 /* UIKit.framework in Frameworks */,
 				7758ED64193855D800E63229 /* Foundation.framework in Frameworks */,
@@ -101,6 +109,7 @@
 		7758ED62193855D800E63229 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7758EDE1193D73DB00E63229 /* AudioToolbox.framework */,
 				7758ED63193855D800E63229 /* Foundation.framework */,
 				7758ED65193855D800E63229 /* CoreGraphics.framework */,
 				7758ED67193855D800E63229 /* UIKit.framework */,
@@ -112,12 +121,13 @@
 		7758ED69193855D800E63229 /* Crystal Ball */ = {
 			isa = PBXGroup;
 			children = (
-				7758ED72193855D800E63229 /* AppDelegate.h */,
-				7758ED73193855D800E63229 /* AppDelegate.m */,
 				7758ED75193855D800E63229 /* Main.storyboard */,
 				7758ED78193855D800E63229 /* ViewController.h */,
 				7758ED79193855D800E63229 /* ViewController.m */,
+				7758EDDF193D739A00E63229 /* crystal_ball.mp3 */,
 				7758ED7B193855D800E63229 /* Images.xcassets */,
+				7758ED99193C059D00E63229 /* CrystalBall.m */,
+				7758ED98193C059D00E63229 /* CrystalBall.h */,
 				7758ED6A193855D800E63229 /* Supporting Files */,
 			);
 			path = "Crystal Ball";
@@ -126,6 +136,8 @@
 		7758ED6A193855D800E63229 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7758ED73193855D800E63229 /* AppDelegate.m */,
+				7758ED72193855D800E63229 /* AppDelegate.h */,
 				7758ED6B193855D800E63229 /* Crystal Ball-Info.plist */,
 				7758ED6C193855D800E63229 /* InfoPlist.strings */,
 				7758ED6F193855D800E63229 /* main.m */,
@@ -230,6 +242,7 @@
 			files = (
 				7758ED7C193855D800E63229 /* Images.xcassets in Resources */,
 				7758ED6E193855D800E63229 /* InfoPlist.strings in Resources */,
+				7758EDE0193D739A00E63229 /* crystal_ball.mp3 in Resources */,
 				7758ED77193855D800E63229 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7758ED7A193855D800E63229 /* ViewController.m in Sources */,
+				7758ED9A193C059D00E63229 /* CrystalBall.m in Sources */,
 				7758ED74193855D800E63229 /* AppDelegate.m in Sources */,
 				7758ED70193855D800E63229 /* main.m in Sources */,
 			);
@@ -456,6 +470,7 @@
 				7758ED94193855D900E63229 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7758ED95193855D900E63229 /* Build configuration list for PBXNativeTarget "Crystal BallTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +479,7 @@
 				7758ED97193855D900E63229 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
